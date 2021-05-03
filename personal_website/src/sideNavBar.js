@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Tab from './Tab.js';
+import ABoutMeTab from './AboutMeTab.js';
 
 const reactDom = require("react-dom");
 
@@ -10,8 +11,8 @@ class SideNavBar extends React.Component{
     constructor(props){
         super(props);
         this.tabs = [];
-        this.tabs.push(<div style ={{marginTop: '5vh', marginBottom: '5vh', fontSize: '4vw'}}>Henrik Lam</div>)
-        this.tabs.push(<Tab style={{color: 'white'}}>About Me</Tab>);
+        this.tabs.push(<div style ={{marginTop: '5vh', marginBottom: '5vh', fontSize: '4vw'}} key = '0'>Henrik Lam</div>)
+        this.tabs.push(<Tab style={{color: 'white'}} click={this.resetActives} key = '1' id = '1' tabs= {this.tabs}>About Me</Tab>);
     }
     render(){
         return(
@@ -19,6 +20,15 @@ class SideNavBar extends React.Component{
                 {this.tabs}
             </div>
         );
+    }
+    resetActives(skip){
+        console.log(skip + "was pressed!");
+        var i;
+        for(i = 0; i < this.tabs.length; i++){
+            if(i != skip){
+                this.tabs.active = false;
+            }
+        }
     }
 }
 
