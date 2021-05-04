@@ -1,8 +1,8 @@
 import './App.css';
 import Page from './Page.js';
 import Tab from './Tab.js';
-var tabs = [<Tab>Hi</Tab>];
-var text = ["WOw!"];
+var tabs = ['Hi','Hi2'];
+var text = ["WOw!", 'Yeeeeeeeet!'];
 function App() {
   return (
     <div className="App">

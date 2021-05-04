@@ -5,6 +5,7 @@ import { withRouter } from 'react-router';
 class Tab extends React.Component{
     constructor(props){
         super(props);
+        console.log(this.props);
         this.state = {active:false};
         this.handleClick = this.handleClick.bind(this);
         this.styles = {
@@ -24,7 +25,7 @@ class Tab extends React.Component{
         this.styles = {
             fontSize: '35px'
         };
-        console.log("click!!!!!!!");
+        this.props.onClick(this.props.id);
     }
     render(){
         return(
