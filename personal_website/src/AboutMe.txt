@@ -1,0 +1,5 @@
+About Me
+Hi, my name is Ching Hei, but my friends usually call me Henrik. I am a Computer Science student at Rensselaer Polytechnic Institute
+who is also working on his dual Mathematics. My expected graduation date is May 2022, and I am currently a senior. For my Computer
+Science degree, I am doing my concentration in Systems and Software, and for my Mathematics degree, I am doing my concentration in 
+Mathematics of Computation.
